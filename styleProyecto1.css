@@ -133,6 +133,7 @@ border-bottom: 1px solid #ccc;
     font-size: 10px;
   }
 
+
   /* SEGUNDA COLUMNA */
 .imagencerrar{
   width: 100%;
@@ -144,9 +145,160 @@ border-bottom: 1px solid #ccc;
   background-color: #04054d;
   padding-left: 0%;
   padding-right: 0%;
-  left: 200px;;
+  left: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
+.cardwhite {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  
+  
+  }
+
+.card1 {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+}
+.card1 .purple-button {
+  position: absolute;
+  bottom: 10px; 
+  left: 20%; 
+  transform: translateX(-50%);
+  
+}
+
+
+.card1 p{
+    flex: 1;
+    font-size: 4px;
+}
+
+.card1 img {
+  margin-left: 20px;
+  width: 50px;
+  height: auto;
+}
+
+/*CARD 2*/
+
+.card2 {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  
+}
+.card2 .purple-button {
+  position: absolute;
+  bottom: 10px; 
+  right: 20%; 
+  transform: translateX(-50%); 
+}
+.card2 p{
+  flex: 1;
+  font-size: 4px;
+}
+
+.card2 img {
+margin-right: 20px;
+width: 50px;
+height: auto;
+}
+
+
+.cardblack {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  
+  }
+/*CARD 3*/
+.card3 {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  
+}
+.card3 .purple-button {
+  position: absolute;
+  bottom: 10px; 
+  left: 20%; 
+  transform: translateX(-50%); 
+}
+.card3 p{
+  flex: 1;
+  font-size: 4px;
+  color: white;
+}
+
+.card3 img {
+margin-left: 20px;
+width: 50px;
+height: auto;
+}
+
+/*CARD 4*/
+.card4 {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  
+}
+.card4 .purple-button {
+  position: absolute;
+  bottom: 10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+.card4 p{
+  flex: 1;
+  font-size: 4px;
+  color: white;
+}
+
+.card4 img {
+margin-right: 20px;
+width: 50px;
+height: auto;
+}
+
+/*BOTON CARDS*/
+
+.purple-button {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 1px 2px; 
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 5px; 
+}
+
+.purple-button:hover {
+  background-color: #6a0dad; 
+}
 
 .opcionescurriculo .botoncerrar{
   position: absolute;
