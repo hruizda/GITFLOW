@@ -116,6 +116,50 @@
                 <div class="container-hombre"> <!--Cuadro azul con la foto del hombre-->
                     <imagen src="IMAGES/Fototi.png" style="height: 200px; margin-top: 10px;border: 15px solid #add3f89f;margin-left: 10px;" alt"imagen4" imagen>
                     
+										
+					<div class='editar-foto'>
+					<div class="container">
+					<h2>Dot Not Optimize This Image</h2>
+					<label for="rangeInput">Seleccionar Valor:</label>
+					<input type="range" id="rangeInput" min="0" max="100" value="0" step="1">
+					<br><br>
+					<progress id="progressBar" max="100" value="0"></progress>
+					<br><br>
+					<label>
+					<input type="checkbox" id="checkBox"> Set Max Image Width
+					</label>
+					</div>
+					
+					<script>
+					const rangeInput = document.getElementById('rangeInput');
+					const progressBar = document.getElementById('progressBar');
+					const checkBox = document.getElementById('checkBox');
+
+					rangeInput.addEventListener('input', () => {
+					progressBar.value = rangeInput.value;
+    });
+
+					checkBox.addEventListener('change', () => {
+					if (checkBox.checked) {
+					rangeInput.disabled = false;
+        } else {
+            rangeInput.disabled = true;
+        }
+    });
+</script>
+						<div class='progressBar'
+						<div class='editar-foto-cont'></div>
+						<div class='editar-foto-cont'></div>
+						<input type="checkbox" id="cbox2" value="second_checkbox"
+						<div class='editar-foto-cont'></div>
+						<div class='editar-foto-cont'></div>
+					</div>
+                    <form>
+                </div>
+				
+				
+				
+					
                 </div>
 
                 <!--botones flotantes-->
